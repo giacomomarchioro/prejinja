@@ -1,0 +1,14 @@
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">[= _LANGUAGESFLAGS[_LANG] =]
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      [. for _otherlang in _OTHERLANGUAGES .]
+      <a class="dropdown-item" onclick="location.replace(window.location.href.replace('[= _LANG =]', '[= _otherlang =]'))">[= _LANGUAGESFLAGS[_otherlang] =][= _LANGUAGESNAMES[_otherlang] =]</a>
+      [. endfor .]
+    </div>
+  </div> 
+</div>
