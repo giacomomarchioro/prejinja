@@ -3,8 +3,10 @@ import jinja2
 from pathlib import Path
 import json
 from .flagsAndLanguages import languagesFlags,languagesNames
+from .simplemarkdown import simpleMarkdown
+import html
 
-def precompile(srcDirs,
+def preprocess(srcDirs,
                 distDirs,
                 translations,
                 mainLanguage,
@@ -14,7 +16,25 @@ def precompile(srcDirs,
                 block_start_string,
                 block_end_string,
                 variable_start_string,
-                variable_end_string):
+                variable_end_string,
+                autoescape,
+                markdown,
+                sanitize):
+
+    if markdown == "subset":
+        if sanitize and not autoescape:
+            print("Santizing")
+            def md(text):
+                sanText = html.escape(text)
+                return simpleMarkdown(sanText)
+        else:
+            md = simpleMarkdown
+
+    elif markdown == "fullmarkdown":
+        import markdown
+        md = markdown.markdown
+    else:
+        def md(text):return text
 
     def circularLoreIpsum():
         while True:
@@ -68,14 +88,16 @@ def precompile(srcDirs,
         for lang in translations:
             # we have to define a new environment for every language so we can
             # store the linked templates.
+            print(autoescape)
             environment = NameTrackingEnvironment(
                 loader=FileSystemLoader(""),
                 trim_blocks=True,
+                autoescape=autoescape,
                 block_start_string=block_start_string,
                 block_end_string=block_end_string,
                 variable_start_string=variable_start_string,
                 variable_end_string=variable_end_string,
-                undefined=jinja2.StrictUndefined
+                undefined=jinja2.StrictUndefined,
             )
             jinja2Template = environment.get_template(str(template))
             parts = list(template.parts[1:-1])
@@ -88,7 +110,7 @@ def precompile(srcDirs,
             if lang == "xx":
                 txt = {i:getDummyText(templateVars[i]['character_number'],i) for i in templateVars}
             else:
-                txt = {i: templateVars[i]['texts'][lang]['text'] for i in templateVars}
+                txt = {i: md(templateVars[i]['texts'][lang]['text']) for i in templateVars}
             # the variables will always have a LANG constant with the current language
             txt["_LANG"] = lang
             otherLanguages = translations[:]
@@ -111,7 +133,6 @@ def precompile(srcDirs,
                                 raise ValueError(f"Variable {i} of {templateUsed} already defined in {template}")
                             if lang == "xx":
                                 txt[i] = getDummyText(externalTemplateVars[i]['character_number'],i)
-                                print("LORE")
                             else:
                                 txt[i] = externalTemplateVars[i]['texts'][lang]['text']
 

@@ -1,8 +1,8 @@
 # Default configuration
 dc = {
     "General": {
-        "mainLanguage": "it",
-        "translations": "en es",
+        "mainLanguage": "en",
+        "translations": "es it de",
         "fileFormats": "html htm htmx js svg php",
         "variableToText": True,
         "lipsum": False,
@@ -16,6 +16,9 @@ dc = {
         "variable_start_string": "[=",
         "variable_end_string": "=]",
         "variableRegexPattern": "\[=\s(?!_)(.*?)\s=\]",
+        "autoescape": False,
+        "markdown": "subset",
+        "sanitize": True,
     },
     "FoldersMapping":{
         "srctemplates":"templates",

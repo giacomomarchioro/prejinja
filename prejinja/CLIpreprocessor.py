@@ -1,5 +1,5 @@
 import argparse
-from .precompiler import precompile
+from .preprocessor import preprocess
 import os
 import configparser
 from . import defaultConfig
@@ -79,20 +79,44 @@ def preJinjaPut():
                     required=False,
                     default=userConfigParser['General']['variable_end_string'],
                     help="The Jinja2 variable end string.")
+    
+    parser.add_argument('--autoescape',
+                    action='store_true',
+                    required=False,
+                    default=userConfigParser['General']['autoescape'],
+                    help="Autoescape al the html tags.")
+
+    parser.add_argument('--markdown',
+                    required=False,
+                    default=userConfigParser['General']['markdown'],
+                    help="Set the markdown.")
+
+    parser.add_argument('--sanitize',
+                action='store_true',
+                required=False,
+                default=userConfigParser['General']['sanitize'],
+                help="Sanitize string before markdown.")
+
 
     args = parser.parse_args()
     print(args)
-    precompile(srcDirs=args.srcdirs,
+    autoescape = args.autoescape == "True"
+    sanitize = args.sanitize == "True"
+    lipsum = args.lipsum == "True"
+    preprocess(srcDirs=args.srcdirs,
                 distDirs=args.distdirs,
                 translations=args.translations,
                 mainLanguage=args.mainlanguage,
                 loreIpsum=args.loreipsum,
                 fileFormats=args.fileformats,
-                lipsum=args.lipsum,
+                lipsum=lipsum,
                 block_start_string=args.block_start_string,
                 block_end_string=args.block_end_string,
                 variable_start_string=args.variable_start_string,
-                variable_end_string=args.variable_end_string)
+                variable_end_string=args.variable_end_string,
+                autoescape= autoescape,
+                markdown=args.markdown,
+                sanitize=sanitize)
 
 if __name__ == '__main__':
     preJinjaPut()

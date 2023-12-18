@@ -11,7 +11,7 @@ def getText(srcDirs,
     """Get the variables in the source template.
 
     Args:
-        srcTemplateDir (str): The path of the source templates.
+        srcDirs (str): The path of the source templates.
         variableRegexPattern (str): The RegEx pattern for extracting the variables.
         mainLanguage (str): The main language of the document e.g. 'it'.
         translations (str): A list of languages supported e.g. 'es en de'.
@@ -22,7 +22,7 @@ def getText(srcDirs,
     Returns:
         True
     """
-    variableToText = bool(variableToText)
+    variableToText = variableToText == True
     fileFormats = fileFormats.split()
     translations = translations.split()
     srcFiles = []
