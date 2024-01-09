@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="[= _LANG =]" xml:lang="[= _LANG =]" xmlns="http://www.w3.org/1999/xhtml">
+[. for _otherlang in _OTHERLANGUAGES .]
+<link rel="alternate" hreflang="[= _otherlang =]" href="{{ url_for(request.endpoint.replace('[= _LANG =]','[= _otherlang =]',1))}}" />
+[. endfor .]
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- HEAD  -->
+    [. block head .]
+    [. endblock head .]
+</head>
+<!--         NAVBAR        -->
+[. include './srctemplates/includes/navbar.html' .]
+<body>
+<!-- BODY  -->
+[. block body .]
+[. endblock body .]
+</body>
+</html>
+
+

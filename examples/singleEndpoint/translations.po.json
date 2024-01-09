@@ -1,0 +1,442 @@
+{
+   "srctemplates/index.html": {
+      "h1_PreJinja_8c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 8,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "PreJinja"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "PreJinja"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "PreJinja"
+            }
+         }
+      },
+      "p_description_50c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 50,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "description questo \u00e8 un **test** che usa markdown non \u00e8 possibile fare altrimenti [test](https://stackoverflow.com/) o forse *si*. Tu."
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      },
+      "h1_How_it_works_20c": {
+         "order": 2,
+         "description": "This is a description",
+         "character_number": 20,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "How it works"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      },
+      "p_prejinja_compile_60c": {
+         "order": 3,
+         "description": "This is a description",
+         "character_number": 60,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "prejinja compile \u00e8 un altro **modo** per usare [google](www.google.com) <i>test</i> non c'\u00e8 altro modo."
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      }
+   },
+   "srctemplates/includes/navbar.html": {
+      "a_Progetti_10c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 10,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "Progetti"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         },
+         "unused": true
+      },
+      "a_Applicativi_10c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 10,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "Applicativi"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         },
+         "unused": true
+      },
+      "a_Contatti_10c": {
+         "order": 2,
+         "description": "This is a description",
+         "character_number": 10,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "Contatti"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         },
+         "unused": true
+      }
+   },
+   "srctemplates/includes/layout.html": {},
+   "srcstatic/test.svg": {
+      "SVG_TEST": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": null,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "TEST"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         },
+         "unused": true
+      },
+      "p_descirption_3p": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": null,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "descirption 3p"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      }
+   },
+   "srctemplates/endpointstest.html": {
+      "h1_PreJinja_8c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 8,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "PreJinja"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      },
+      "p_description_50c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 50,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "description"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      },
+      "h1_How_it_works_20c": {
+         "order": 2,
+         "description": "This is a description",
+         "character_number": 20,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "How it works"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      },
+      "p_prejinja_compile_60c": {
+         "order": 3,
+         "description": "This is a description",
+         "character_number": 60,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "prejinja compile"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      }
+   },
+   "srctemplates/secondpage.html": {
+      "h1_PreJinja_8c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 8,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "PreJinja"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      },
+      "p_description_50c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 50,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "description"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      },
+      "h1_How_it_works_20c": {
+         "order": 2,
+         "description": "This is a description",
+         "character_number": 20,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "How it works"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      },
+      "p_prejinja_compile_60c": {
+         "order": 3,
+         "description": "This is a description",
+         "character_number": 60,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "prejinja compile"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": ""
+            }
+         }
+      }
+   }
+}

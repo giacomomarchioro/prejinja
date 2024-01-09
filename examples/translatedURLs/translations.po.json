@@ -1,0 +1,517 @@
+{
+   "srctemplates/index.html": {
+      "h1_PreJinja_8c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 8,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "PreJinja"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "PreJinja"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "PreJinja"
+            }
+         }
+      },
+      "p_description_50c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 50,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "description questo \u00e8 un **test** che usa markdown non \u00e8 possibile fare altrimenti [test](https://stackoverflow.com/) o forse *si*. Tu."
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "description this is a **test** that uses markdown it is not possible to do otherwise [test](https://stackoverflow.com/) or maybe *yes*. You."
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "descripci\u00f3n esta es una **prueba** que utiliza rebajas, no es posible hacer otra cosa [prueba](https://stackoverflow.com/) o tal vez *s\u00ed*. T\u00fa."
+            }
+         }
+      },
+      "h1_How_it_works_20c": {
+         "order": 2,
+         "description": "This is a description",
+         "character_number": 20,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "How it works"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "How it works"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "C\u00f3mo funciona"
+            }
+         }
+      },
+      "p_prejinja_compile_60c": {
+         "order": 3,
+         "description": "This is a description",
+         "character_number": 60,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "prejinja compile \u00e8 un altro **modo** per usare [google](www.google.com) <i>test</i> non c'\u00e8 altro modo."
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "prejinja compile is another **way** to use [google](www.google.com) <i>test</i> there is no other way."
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "La compilaci\u00f3n prejinja es otra **forma** de utilizar [google](www.google.com) <i>prueba</i>, no hay otra forma."
+            }
+         }
+      },
+      "URL_home": {
+         "order": 4,
+         "description": "This is a description",
+         "character_number": null,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "home"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "casa"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "hogar"
+            }
+         }
+      }
+   },
+   "srctemplates/includes/navbar.html": {
+      "a_Progetti_10c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 10,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "Progetti"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Projects"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Proyectos"
+            }
+         },
+         "unused": true
+      },
+      "a_Applicativi_10c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 10,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "Applicativi"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Applications"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Aplicaciones"
+            }
+         },
+         "unused": true
+      },
+      "a_Contatti_10c": {
+         "order": 2,
+         "description": "This is a description",
+         "character_number": 10,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "Contatti"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Contacts"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Contactos"
+            }
+         },
+         "unused": true
+      },
+      "a_test_page_10c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 10,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "test page"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "pagina di prova"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "p\u00e1gina de prueba"
+            }
+         }
+      },
+      "a_second_page_10c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 10,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "second page"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "seconda pagina"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "segunda pagina"
+            }
+         }
+      }
+   },
+   "srctemplates/includes/layout.html": {},
+   "srcstatic/test.svg": {
+      "SVG_TEST": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": null,
+         "texts": {
+            "it": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "TEST"
+            },
+            "en": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "TEST"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "PRUEBA"
+            }
+         },
+         "unused": true
+      },
+      "p_descirption_3p": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": null,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "descirption 3p"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "descrizione 3p"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "descripci\u00f3n 3p"
+            }
+         }
+      }
+   },
+   "srctemplates/endpointstest.html": {
+      "h1_PreJinja_8c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 8,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "PreJinja"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "PreJinja"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "prejinja"
+            }
+         },
+         "unused": true
+      },
+      "p_description_50c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 50,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "description"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "descrizione"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "descripci\u00f3n"
+            }
+         },
+         "unused": true
+      },
+      "h1_How_it_works_20c": {
+         "order": 2,
+         "description": "This is a description",
+         "character_number": 20,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "How it works"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Come funziona"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "C\u00f3mo funciona"
+            }
+         }
+      },
+      "p_prejinja_compile_60c": {
+         "order": 3,
+         "description": "This is a description",
+         "character_number": 60,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "prejinja compile"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "compilazione prejinja"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "compilar prejinja"
+            }
+         }
+      },
+      "h1_Second_Page_8c": {
+         "order": 0,
+         "description": "This is a description",
+         "character_number": 8,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "Second Page"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Seconda pagina"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "Segunda pagina"
+            }
+         }
+      },
+      "p_secondpage_description_50c": {
+         "order": 1,
+         "description": "This is a description",
+         "character_number": 50,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "secondpage description"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "descrizione della seconda pagina"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "descripci\u00f3n de la segunda p\u00e1gina"
+            }
+         }
+      },
+      "h1_a_test_with_format": {
+         "order": 4,
+         "description": "This is a description",
+         "character_number": null,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "a test with format"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "un test con formato"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "una prueba con formato"
+            }
+         }
+      },
+      "format_test": {
+         "order": 5,
+         "description": "This is a description",
+         "character_number": null,
+         "texts": {
+            "en": {
+               "type": "original",
+               "author": "",
+               "comment": "",
+               "text": "a test with format this should be %s = 3"
+            },
+            "it": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "un test con formato dovrebbe essere %s = 3"
+            },
+            "es": {
+               "type": "translation",
+               "translator": "",
+               "comment": "",
+               "text": "una prueba con formato este deber\u00eda ser %s = 3"
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,20 @@
+[. extends './srctemplates/includes/layout.html' .]
+[. block  head .]
+[. endblock  head .]
+[. block  body .]
+<h1> [= h1_PreJinja_8c =] </h1>
+<p> [= p_description_50c =] </p>
+<h1> [= h1_How_it_works_20c =] </h1>
+<p> [= p_prejinja_compile_60c =] </p>
+<img
+  src="/static/[= _LANG =]-test.svg"
+  alt="triangle with all three sides equal"
+  height="87"
+  width="100" />
+  {{ url_for("[= _LANG =]_secondPage")}}
+  [= URL_home =]
+
+<a href="{{ url_for("[= _LANG =]_secondPage")}}"> Second page</a>
+[. endblock  body .]
+
+

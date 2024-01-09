@@ -1,0 +1,14 @@
+<div class="navbar">
+  <a href="{{url_for('[= _LANG =]_test')}}">[= a_test_page_10c =]</a>
+  <a href="{{url_for('[= _LANG =]_secondPage')}}">[= a_second_page_10c =]</a>
+  <div class="dropdown">
+    <button class="dropbtn">[= _LANGUAGESFLAGS[_LANG] =]
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      [. for _otherlang in _OTHERLANGUAGES .]
+      <a class="dropdown-item" href={{ url_for(request.endpoint.replace("[= _LANG =]","[= _otherlang =]",1))}}>[= _LANGUAGESFLAGS[_otherlang] =][= _LANGUAGESNAMES[_otherlang] =]</a>
+      [. endfor .]
+    </div>
+  </div>
+</div>
