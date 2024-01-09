@@ -160,6 +160,8 @@ cython_debug/
 #.idea/
 
 
-example/static
-example/templates
+examples/singleEndpoint/static
+examples/singleEndpoint/templates
+examples/translatedURLs/static
+examples/translatedURLs/templates
 .DS_Store
