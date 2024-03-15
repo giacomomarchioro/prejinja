@@ -22,7 +22,9 @@ def getText(srcDirs,
     Returns:
         True
     """
-    variableToText = variableToText == True
+    variableToText = variableToText == "True"
+    print("VRB")
+    print(variableToText)
     fileFormats = fileFormats.split()
     translations = translations.split()
     srcFiles = []
@@ -36,6 +38,7 @@ def getText(srcDirs,
     translationsList = dict()
     for sourceFile in srcFiles:
         sourceFile = str(sourceFile)
+        # each file is identified with the file path
         translationsList[sourceFile] = dict()
         with open(sourceFile) as f:
             #TODO: variables with the same name
@@ -76,12 +79,19 @@ def getText(srcDirs,
         with open('translations.po.json', 'r') as orig:
             previousTranslations = json.load(orig)
         for page in translationsList:
-            # if we already scanned the page we update any new variable
+            # if we already scanned the page we update any new variable in
+            # previousTranslations so we can re-use it.
             if page in previousTranslations:
-                # we check if we have unused variables
                 for previousVariable in previousTranslations[page]:
+                    # we check if we have unused variables
                     if previousVariable not in translationsList[page]:
                         previousTranslations[page][previousVariable]['unused'] = True
+                    else:
+                        # we check if we have a new languages
+                        for language in translations + [mainLanguage]:
+                            allTexts = previousTranslations[page][previousVariable]["texts"]
+                            if language not in allTexts.keys():
+                                allTexts[language] = translationsList[page][previousVariable]["texts"][language]
                 # we check if we have new variables
                 for variable in translationsList[page]:
                     if variable not in previousTranslations[page]:

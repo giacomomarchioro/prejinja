@@ -105,7 +105,12 @@ def preprocess(srcDirs,
             parts.append("-".join((lang,template.parts[-1])))
             newPath = Path(*parts)
             newPath.parent.mkdir(parents=True, exist_ok=True)
-            templateVars = data[str(template)]
+            try:
+                templateVars = data[str(template)]
+            except KeyError as e:
+                #e.add_note('The template was not found use ')
+                s = f'Template {template} not found. Did you use prejinjaget?'
+                raise KeyError(s)
             # we get the text for the language
             if lang == "xx":
                 txt = {i:getDummyText(templateVars[i]['character_number'],i) for i in templateVars}
