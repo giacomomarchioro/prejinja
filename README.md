@@ -138,6 +138,8 @@ Here we provide the components for the two cases:
   </div>
 ```
 
+ > Pay attention that formatter might split this line in pieces! Better to create a separate file and use include!
+
 ## Plurals
 Plurals are handled by Jinja:
 
@@ -153,6 +155,13 @@ Plurals are handled by Jinja:
 
 ## The benefits
 The goal to this package is to separate the layout from the content. In this way it is possible for the WEB developer to create a draft of the layout based on the user needs and leave the copywriter and the translators to work on a separate `.json` file.
+
+## For debuggin
+```
+import prejinja.CLIpreprocessor as CI
+CI.preJinjaPut()
+```
+
 
 ## Similar packages
 [Flask-Babel](https://python-babel.github.io/flask-babel/#)

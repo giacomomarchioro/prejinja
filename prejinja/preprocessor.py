@@ -80,14 +80,15 @@ def preprocess(srcDirs,
         return text
 
     # https://stackoverflow.com/a/76312593/2132157
-    class NameTrackingEnvironment(jinja2.Environment):
-        def __init__(self, **kwargs):
-            super().__init__(**kwargs)
-            self.templatesUsed = []
+    # did not prove effective for multiple imports
+    # class NameTrackingEnvironment(jinja2.Environment):
+    #     def __init__(self, **kwargs):
+    #         super().__init__(**kwargs)
+    #         self.templatesUsed = []
 
-        def get_template(self, name, parent=None, globals=None):
-            self.templatesUsed.append(name)
-            return super().get_template(name, parent, globals)
+    #     def get_template(self, name, parent=None, globals=None):
+    #         self.templatesUsed.append(name)
+    #         return super().get_template(name, parent, globals)
 
     # we convert to list
     fileFormats = fileFormats.split()
@@ -113,7 +114,7 @@ def preprocess(srcDirs,
             # we have to define a new environment for every language so we can
             # store the linked templates.
             print(autoescape)
-            environment = NameTrackingEnvironment(
+            environment = jinja2.Environment(
                 loader=FileSystemLoader(""),
                 trim_blocks=True,
                 autoescape=autoescape,
@@ -168,11 +169,11 @@ def preprocess(srcDirs,
             txt["_LANGUAGESFLAGS"] = languagesFlags
             try:
                 content = jinja2Template.render(**txt)
-                print(environment.templatesUsed)
             # in the case the template is using other templates
             except jinja2.UndefinedError as e:
-                print(environment.templatesUsed)
-                for templateUsed in environment.templatesUsed:
+                templatesUsed = extractLinks(r"\[.\s(?!_)(.*?)\s.\]",
+                                             template)
+                for templateUsed in templatesUsed:
                     print("Now adding: %s" %templateUsed)
                     #TODO: check if better to add ./ in get variable
                     # here I check each template if I can find the template.
