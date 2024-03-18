@@ -193,8 +193,6 @@ def preprocess(srcDirs,
                 try:
                     content = jinja2Template.render(**txt)
                 except jinja2.exceptions.UndefinedError as e:
-                    print(txt)
-                    breakpoint()
                     s = f'There was a missing variable. Did you use prejinjaget?'
                     raise KeyError(s)
             with open(newPath, "w") as f:
